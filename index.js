@@ -6,6 +6,7 @@ var inputBotao = document.getElementById("fazerLogin");
 var btCadastrar = document.getElementById('cadastrar');
 var linkCadastro = document.getElementById('pgCadastro');
 
+
 /*
 	email.addEventListener('focus', ()=>{
 		email.style.borderColor = "#3b3b3b";
@@ -31,12 +32,13 @@ var linkCadastro = document.getElementById('pgCadastro');
 		var erroLogin = document.getElementById('infsErradas');
 		erroLogin.style.color = "rgb(175 1 1)";
 		erroLogin.style.bottom = "-5px";
-		erroLogin.style.top = "-5px"
+		erroLogin.style.top = "-5px";
+		//erroLogin.innerHTML = "Preencha os campos";
 
-		var erroDados = document.getElementById('infsErradas');
-		erroDados.style.color = "rgb(175 1 1)";
-		erroDados.style.bottom = "-5px";
-		erroDados.style.top = "-5px"
+		//var erroDados = document.getElementById('infsErradas');
+		//erroDados.style.color = "rgb(175 1 1)";
+		//erroDados.style.bottom = "-5px";
+		//erroDados.style.top = "-5px"
 		
 
 		//var loginInfs = document.getElementById('loginInfs');
@@ -51,7 +53,7 @@ var linkCadastro = document.getElementById('pgCadastro');
 			erroLogin.innerHTML = "Preencha os campos";
 		} else {
 			//window.alert('Informações incorretas');
-			erroDados.innerHTML = "Login e/ ou senha incorretos";
+			erroLogin.innerHTML = "Login e/ ou senha incorretos";
 		}
 	}
 
